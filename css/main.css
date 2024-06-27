@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto mono',monospace;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+.home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows:1fr 2fr;
+}
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .icons span{
+    color: white;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container{
+    margin-left: 50px;
+    
+}
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+    height: auto;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:50px ;
+}
+nav .profile-link a{
+    color: black;
+    border-bottom: solid 1px;
+    font-size: 2.2rem;
+}
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('../assets/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+.home-main-text{
+    font-family: 'Roboto mono', monospace;
+    font-size: 3rem;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: white;
+    text-align: center;
+}
+.home-main-button{
+
+    width: 110px;
+    height: 50px;
+    background-color: #47cfac;
+    border-radius: 10px;
+    border: solid 1px white;
+    display: grid;
+    align-items: center;
+}
+.home-main-button a{
+    color: black;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    font-weight: bolder;
+}
+/*Blogs style*/
+.blogs-main{
+    display: grid;
+}
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+.blogs-news-info-container h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+.blogs-news-info-container p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-top: 5px;
+}
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-main-new h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+.blogs-news-img-container{
+    grid-column: 1;
+}
+.blogs-news-img-container img{
+    width: 85%;
+    margin-top: 5px;
+}
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container{
+    padding:  0 50px 40px;
+}
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+.blogs-button {
+    border: 1px solid #47cfac;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.blogs-posts-container .blogs-post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin: 15px 10px 50px;
+}
+.blogs-posts-container .blogs-post-container p{
+    margin-bottom:25px;
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+}
+.blogs-posts-container .blogs-post-container img{
+    width: 100%;
+    
+
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+/*blogpost*/
+.blogpost-img-container{
+    padding: 0 40px 50px;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+.blogpost-main-container {
+    padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+    border-bottom:1px solid  #cdd2da;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    padding-bottom: 15px;
+}
+.blogpost-main-container h1 {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.blogpost-main-container p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+}
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background-color: #e6e9ed;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact-main-container div {
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+}
+.contact-main-container div a{
+    border-bottom: 1px solid black;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+}
+.contact-main-container div p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-top: 10px;
+}
+.contact-main-container .contact-left, .contact-right{
+    text-align: initial;
+    margin-top: 85px;
+    
+}
+.contact-main-container img{
+    width:100px;
+}
+/*Profile*/
+.profile-main-container{
+    padding: 70px 40px;
+    background-color: #e6e9ed;
+    margin-bottom: 50px;
+}
+.profile-main-container img {
+    width: 320px;
+    margin-right: 30px;
+}
+.profile-main-container .profile-container {
+    display: flex;
+}
+.profile-container div h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 10px;
+}
+.profile-container div{
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.profile-main-proyects{
+    padding: 0 50px 40px;
+
+}
+.profile-main-proyects h3 {
+    border-bottom:1px solid  #cdd2da;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.proyects-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.proyect-container{
+    padding:0 5px;
+}
+.proyect-container h4{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.proyect-container p {
+    font-size: 1.4rem;
+    font-weight: 1.6rem;
+}
